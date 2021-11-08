@@ -9,6 +9,37 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.light {
+  background-color: white;
+  color: #1e202a;
+}
+
+.light .header__switch {
+  border-top: 2px solid #63687e;
+}
+
+.light .card__user-login, .light .card__txt, .light .card--sm__txt {
+  color: #63687e;
+}
+
+.dark {
+  background-color: #1e202a;
+  color: white;
+}
+
+.dark .header__switch {
+  border-top: 2px solid #8b97c6;
+}
+
+.dark .card__user-login, .dark .card__txt, .dark .card--sm__txt {
+  color: #8b97c6;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;

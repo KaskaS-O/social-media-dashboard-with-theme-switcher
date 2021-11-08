@@ -1,5 +1,48 @@
 // - Font size (Overview Card Headings): 14px
+@import 'variables';
 
 body {
     font-family: 'Inter', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.light {
+    background-color: $white;
+    color: $text-ligh-theme-blue;
+
+    .header__switch {
+        border-top: 2px solid $text-ligh-theme-gray;
+    }
+
+    .card {
+
+        &__user-login, 
+        &__txt,  
+        &--sm__txt {
+            color: $text-ligh-theme-gray;
+        }
+
+    }
+}
+
+.dark {
+    background-color: $dark-bg;
+    color: $white;
+
+    .header__switch {
+        border-top: 2px solid $text-dark-theme;
+    }
+
+    .card {
+
+        &__user-login, 
+        &__txt,  
+        &--sm__txt {
+            color: $text-dark-theme;
+        }
+
+    }
 }
