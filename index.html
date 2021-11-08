@@ -8,79 +8,175 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <header class="grid-container header">
+    <h1 class="header__title">Social Media Dashboard</h1>
+    <span class="header__txt">Total Followers: 23,004</span>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <div class="header__switch">
+      <span class="header__txt">Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
 
-  Dark Mode
+  <section class="grid-container statistics">
 
-  
+    <div class="statistics__card card">
+      <div class="card__user">
+        <img src="./images/icon-facebook.svg" alt="" class="card__img">
+        <span class="card__user-login">@nathanf</span>
+      </div>
+      <span class="card--bg__numbers">1987</span>
+      <span class="card__txt">Followers</span>
+      <div class="card__change change change--up">
+        <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+        <span class="change__txt change__txt--up">12 Today</span>
+      </div>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div class="statistics__card card card--bg">
+      <div class="card__user">
+        <img src="./images/icon-twitter.svg" alt="" class="card__img">
+        <span class="card__user-login">@nathanf</span>
+      </div>
+      <span class="card--bg__numbers">1044</span>
+      <span class="card__txt">Followers</span>
+      <div class="card__change change change--up">
+        <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+        <span class="change__txt change__txt--up">99 Today</span>
+      </div>
+    </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+    <div class="statistics__card card card--bg">
+      <div class="card__user">
+        <img src="./images/icon-instagram.svg" alt="" class="card__img">
+        <span class="card__user-login">@realnathanf</span>
+      </div>
+      <span class="card--bg__numbers">11k</span>
+      <span class="card__txt">Followers</span>
+      <div class="card__change change change--up">
+        <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+        <span class="change__txt change__txt--up">1099 Today</span>
+      </div>
+    </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <div class="statistics__card card card--bg">
+      <div class="card__user">
+        <img src="./images/icon-youtube.svg" alt="" class="card__img">
+        <span class="card__user-login">Nathan F.</span>
+      </div>
+      <span class="card--bg__numbers">8239</span>
+      <span class="card__txt">Subscribers</span>
+      <div class="card__change change change--down">
+        <img class="change__icon change__icon--down" src="./images/icon-down.svg" alt="">
+        <span class="change__txt change__txt--down">144 Today</span>
+      </div>
+    </div>
+  </section>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+  <section class="overview">
 
+    <h2 class="overview__title">Overview - Today</h2>
 
+    <div class="grid-container overview__stats">
 
-  Overview - Today
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Page Views</span>
+        <img class="card__img" src="./images/icon-facebook.svg" alt="">
+        <span class="card--sm__numbers">87</span>
+        <div class="card__change change change--up">
+          <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+          <span class="change__txt change__txt--up">3%</span>
+        </div>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Likes</span>
+        <img class="card__img" src="./images/icon-facebook.svg" alt="">
+        <span class="card--sm__numbers">52</span>
+        <div class="card__change change change--down">
+          <img class="change__icon change__icon--down" src="./images/icon-down.svg" alt="">
+          <span class="change__txt change__txt--down">2%</span>
+        </div>
+      </div>
 
-  Likes
-  52
-  2%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Likes</span>
+        <img class="card__img" src="./images/icon-instagram.svg" alt="">
+        <span class="card--sm__numbers">5462</span>
+        <div class="card__change change change--up">
+          <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+          <span class="change__txt change__txt--up">2257%</span>
+        </div>
+      </div>
 
-  Likes
-  5462
-  2257%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Profile Views</span>
+        <img class="card__img" src="./images/icon-instagram.svg" alt="">
+        <span class="card--sm__numbers">52k</span>
+        <div class="card__change change change--up">
+          <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+          <span class="change__txt change__txt--up">1375%</span>
+        </div>
+      </div>
 
-  Profile Views
-  52k
-  1375%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Retweets</span>
+        <img class="card__img" src="./images/icon-twitter.svg" alt="">
+        <span class="card--sm__numbers">117</span>
+        <div class="card__change change change--up">
+          <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+          <span class="change__txt change__txt--up">303%</span>
+        </div>
+      </div>
 
-  Retweets
-  117
-  303%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Likes</span>
+        <img class="card__img" src="./images/icon-twitter.svg" alt="">
+        <span class="card--sm__numbers">507</span>
+        <div class="card__change change change--up">
+          <img class="change__icon change__icon--up" src="./images/icon-up.svg" alt="">
+          <span class="change__txt change__txt--up">553%</span>
+        </div>
+      </div>
 
-  Likes
-  507
-  553%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Likes</span>
+        <img class="card__img" src="./images/icon-youtube.svg" alt="">
+        <span class="card--sm__numbers">107</span>
+        <div class="card__change change change--down">
+          <img class="change__icon change__icon--down" src="./images/icon-down.svg" alt="">
+          <span class="change__txt change__txt--down">19%</span>
+        </div>
+      </div>
 
-  Likes
-  107
-  19%
+      <div class="grid-container overview__card card card--sm">
+        <span class="card--sm__txt">Total Views</span>
+        <img class="card__img" src="./images/icon-facebook.svg" alt="">
+        <span class="card--sm__numbers">1407</span>
+        <div class="card__change change change--down">
+          <img class="change__icon change__icon--down" src="./images/icon-down.svg" alt="">
+          <span class="change__txt change__txt--down">12%</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">CodingDuck</a>.
-  </div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">CodingDuck</a>.
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
