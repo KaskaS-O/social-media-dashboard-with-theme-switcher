@@ -1,0 +1,118 @@
+@import 'variables';
+
+.light {
+    background-color: $white;
+    color: $text-ligh-theme-blue;
+
+    .header {
+
+        &__txt {
+            color: $text-ligh-theme-gray;
+        }
+        &__switcher {
+            border-top: 1px solid rgba($text-ligh-theme-gray, 0.6);
+
+            @media (min-width: $desktop-sm) {
+                border-top: none;
+            }
+        }
+
+        &__top-pattern {
+            background-color: $top-bg-pattern-light;
+        }
+    }
+
+
+    .card {
+        background-color: $card-bg-light;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: darken($card-bg-light, 5%);
+        }
+
+        &__user-login, 
+        &__txt,  
+        &__txt--sm {
+            color: $text-ligh-theme-gray;
+        }
+
+    }
+
+    .slider {
+        background-color: $toggle-light;
+
+        &:hover {
+            background-image: $toggle-dark;
+        }
+
+        &:before {
+            background-color: $top-bg-pattern-light;
+        }
+    }
+
+    .overview {
+
+        &__title {
+            color: $text-ligh-theme-gray;
+        }
+    }
+}
+
+.dark {
+    background-color: $dark-bg;
+    color: $white;
+
+    .header {
+
+        &__txt {
+            color: $text-dark-theme;
+        }
+        &__switcher {
+            border-top: 1px solid rgba($text-dark-theme, 0.3);
+
+            @media (min-width: $desktop-sm) {
+                border-top: none;
+            }
+        }
+
+        &__top-pattern {
+            background-color: $top-bg-pattern-dark;
+        }
+    }
+
+
+    .card {
+        background-color: $card-bg-dark;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($card-bg-dark, 5%);
+        }
+
+        &__user-login, 
+        &__txt,  
+        &__txt--sm {
+            color: $text-dark-theme;
+        }
+
+    }
+
+    .slider {
+        background-image: $toggle-dark;
+
+        &:before {
+            background-color: $top-bg-pattern-dark;
+
+        }
+    }
+
+    .overview {
+
+        &__title {
+            color: $white;
+        }
+    }
+}
